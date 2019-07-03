@@ -10,3 +10,6 @@ en el eclipse lo debe ejecutar como una spring boot app
 La carpeta que dice Frontend es la vista del proyecto realizada en Angular esta consume el servicio, para que funcione abra la 
 consola de comandos y dirijase a la carpeta donde ubico el proyecto una vez hecho esto ejecute el comando npm install para que instale los
 modulos de node y despues ejecute el comando ng serve -o para abrir la vista. 
+
+
+para que funcione correctamente debe utilizar el navegador de google chrome con la extensión "Allow CORS: Access-Control-Allow-Origin", esta extension la puede encontrar en la tienda de google https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?utm_source=chrome-ntp-icon 
