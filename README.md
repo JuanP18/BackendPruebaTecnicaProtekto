@@ -1,15 +1,8 @@
 # PruebaTecnicaProtekto
-la carpeta que dice PruebaTecnica es el backend en donde esta toda la logica de la aplicación, esta fue realizada en JAVA con springboot , 
-se recomienda utilizar eclipse JEE en su ultima versión asegurarse de que todas las librerias de spring y maven esten configuradas correctamente
-en el IDE. 
-Tambien se debe usar tomcat 9 para ejecutar la aplicación asegurarse que este configurado , para que funcione correctamente las variables de
-entorno JAVA_HOME y JRE_HOME deben estan configuradas en el path del pc 
-en el eclipse lo debe ejecutar como una spring boot app 
+la carpeta que dice PruebaTecnica es el backend en donde esta toda la lógica de la aplicación, esta fue realizada en JAVA con springboot, se recomienda utilizar el IDE eclipse JEE en su última versión asegurarse de que todas los plugin y las librerías de Spring y Maven en el IDE. Para ejecutar la aplicación se debe usar tomcat en su versión 9, para que funcione correctamente se debe configurar las variables de entorno JAVA_HOME y JRE_HOME deben en el path del pc. 
+Después de realizar lo anterior para cargar el proyecto de clic en “File”—“Open Projects From File System…” y ahí de clic en “Directory” y seleccione la carpeta donde ubico el proyecto una vez hecho esto de clic en “Finish” y espere que el eclipse descargue y configure el proyecto, una vez haya hecho esto es posible que aparezca un error en el pom.xml pero eso se debe a configuraciones del elipse y actualizaciones a los plugin y librerias, haga caso omiso al error. 
+Después de hecho esto haga clic derecho en el proyecto y seleccione la opción run as.. Spring Boot App, le aparece un modal que le dirá cual clase quiere ejecutar ejecute la clase llamada “PruebaTecnicaApplication.java”. 
+Nota: Debe ejecutar primero el proyecto en spring boot para que la vista hecha en angular consuma el servicio. 
+La carpeta que dice Frontend es la vista del proyecto realizada en Angular esta consume el servicio que ofrece el backend, para que funcione abra la consola de comandos y diríjase a la carpeta donde ubico el proyecto una vez hecho esto ejecute el comando npm install para que instale los módulos de node y después ejecute el comando ng serve -o para abrir la vista.
+para que funcione correctamente debe utilizar el navegador de google chrome con la extensión "Allow CORS: Access-Control-Allow-Origin", esta extensión la puede encontrar en la tienda de google https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?utm_source=chrome-ntp-icon
 
-
-La carpeta que dice Frontend es la vista del proyecto realizada en Angular esta consume el servicio, para que funcione abra la 
-consola de comandos y dirijase a la carpeta donde ubico el proyecto una vez hecho esto ejecute el comando npm install para que instale los
-modulos de node y despues ejecute el comando ng serve -o para abrir la vista. 
-
-
-para que funcione correctamente debe utilizar el navegador de google chrome con la extensión "Allow CORS: Access-Control-Allow-Origin", esta extension la puede encontrar en la tienda de google https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?utm_source=chrome-ntp-icon 
