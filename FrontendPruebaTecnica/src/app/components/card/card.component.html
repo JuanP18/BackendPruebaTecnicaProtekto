@@ -1,0 +1,29 @@
+<div class="row animated fadeIn fast" *ngIf="mensaje">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            <p style="text-align: center; text-justify:auto">
+                {{mensaje}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h5 class="card-header">Generador de claves</h5>
+    <div class="card-body">
+        <p class="card-text">Ingrese el número de caracteres que desea para generar una contraseña aleatoria (el número debe estar entre 2 y 50)</p>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Número</span>
+            </div>
+            <input #name name="num" id="num" type="number" min="1" max="50" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <br>
+        <button (click)="getDetails(name.value)" class="btn btn-primary btn-block">Generar Clave</button>
+    </div>
+    <div *ngIf="respuesta" class="container">
+        <h5>Clave generada</h5>
+        <hr>
+        <p style="text-align: center"> <b>clave:</b> {{respuesta}}</p>
+    </div>
+</div>
